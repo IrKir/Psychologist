@@ -1,0 +1,271 @@
+:root {
+  --text-color: #061440;
+  --accent: #FFFFFF;
+  --palette-1: #400D3C;
+  --palette-2: #113E59;
+  --palette-3: #7799A6;
+  --palette-4: #F2D8DF;                                              
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;  
+  color: var(--text-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;           
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.page__container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+@media(max-width: 768px) {
+  .page__container {
+    width: 767px;
+  }
+}
+
+@media(max-width: 480px) {
+  .page__container {
+    width: 479px;
+  }
+}
+
+.video {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+}
+.main__title {
+  padding: 0;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/*======================================================*/
+
+.menu__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  width: 25%;
+  margin: 0;
+  text-align: center;
+  background-color: var(--palette-1);
+}
+
+.menu__item:nth-child(2) {
+  background-color: var(--palette-2);
+}
+
+.menu__item:nth-child(3) {
+  background-color: var(--palette-3);
+}
+
+.menu__item:nth-child(4) {
+  background-color: var(--palette-4);
+}
+
+.menu__link {
+  display: block;
+  padding: 110px 0;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.menu__link:hover {
+  opacity: 0.5;
+}
+
+.menu__link:active {
+  opacity: 0.1;
+}
+
+
+
+.menu__link--color {
+  color: var(--text--color);
+}
+
+.menu__text {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.menu__text--width {
+  width: 40%;
+}
+
+/*======================================================*/
+
+.header {
+  position: relative;
+  padding: 20px;
+  min-width: 100%;
+  min-height: 60px;
+  background-color: var(--accent);
+}
+
+.header__link {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+/*======================================================*/
+
+.slogan {
+  margin: 0 auto;
+  padding: 150px 0;
+  color: var(--accent);
+}
+
+.slogan__title {
+  margin: 0 0 35px 0;
+  font-weight: 300;
+}
+
+.slogan__text {
+  margin: 0 auto;
+  width: 55%;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*======================================================*/
+
+.about {
+  min-width: 100%;
+  padding: 80px 0;
+  background-color: var(--accent);
+}
+
+.about__wrapper {
+  display: flex;
+}
+
+.about__text-wrapper {
+  margin-left: 150px;
+}
+
+.about__title {
+  margin: 0 0 82px 0;
+}
+
+.about__text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.about__text--position {
+  margin-bottom: 30px;
+}
+
+/*======================================================*/
+
+.decor {
+  padding: 140px 0 270px;
+}
+
+.decor__text {
+  margin: 0 auto;
+  width: 55%;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.decor__text--font {
+  font-family: inherit;
+  padding: 40px 0 0 0;
+  font-size: 24px;
+  text-transform: none;
+}
+
+/*======================================================*/
+
+.auxiliary {
+  padding: 350px 0;
+}
+
+/*======================================================*/
+
+.footer {
+  padding: 20px 0;
+  min-height: 60px;
+  background-color: var(--accent);
+}
+
+.social {
+  margin: 0 auto;
+  padding: 0;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  font-size: 36px;
+  color: var(--palette-3);
+}
+
+.social__link:hover {
+  color: var(--palette-2);
+}
+
+.social__link:active {
+  color: var(--palette-1);
+}

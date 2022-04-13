@@ -32,20 +32,20 @@
 .icon-articles:before {  
   content: "\e900";
   font-size: 50px;
-  margin-bottom: 20px;  
+  margin-bottom: 30px;  
 }
 .icon-facebook:before {
   content: "\e901";
 }
-.icon-glasses:before {
+.icon-glasses::before {
   content: "\e902";
   font-size: 50px;
-  margin-bottom: 20px;  
+  margin-bottom: 30px;  
 }
 .icon-hands:before {
   content: "\e903";
   font-size: 50px;
-  margin-bottom: 20px;  
+  margin-bottom: 30px;  
 }
 .icon-instagram:before {
   content: "\e904";
@@ -53,8 +53,53 @@
 .icon-reviews:before {
   content: "\e905";
   font-size: 50px;
-  margin-bottom: 20px;  
+  margin-bottom: 30px;  
 }
 .icon-twitter:before {
   content: "\e906";
+}
+.icon-quotes-left:before {
+  content: "\e977";
+  font-size: 30px;
+  margin-bottom: 20px;
+
+  font-size: calc(24px + (30 - 24)*((100vw - 768px) / (1920 - 768)));
+}
+.icon-quotes-right:before {
+  content: "\e978";
+}
+
+.icon-clock:before {
+  content: "\e94e";
+  padding-right: 10px;
+}
+
+.icon-eye:before {
+  content: "\e9ce";
+}
+
+.icon-eye-blocked:before {
+  content: "\e9d1";
+}
+
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+.icon-heart:before {
+  content: "\e9da";
+}
+
+@media(max-width: 480px) {
+  .icon-articles:before,
+  .icon-glasses::before,
+  .icon-hands:before,
+  .icon-reviews:before { 
+    font-size: 40px;
+    margin-bottom: 20px; 
+  }
 }
